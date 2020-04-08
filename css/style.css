@@ -1,0 +1,582 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/*------------------------------------------------------------------
+
+Template Name:      Creative Design
+Version:            1.0.0
+Created Date:       1/6/2019 
+Author:             Mohamed Elshadid 
+
+------------------------------------------------------------------ */
+*
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* Start Header */
+header {
+    height: 600px;
+}
+header .navbar
+{
+    background-color: transparent !important;
+    padding: 20px;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.7);
+}
+.navbar-dark .navbar-nav .nav-link:hover
+{
+    color: #fff;
+    background-color: #e7a625;
+}
+
+
+header .scrolled
+{
+    background-color: rgba(0,0,0,0.865) !important;
+}
+/*scrooldown
+-------------------*/ 
+
+@-webkit-keyframes scroll-ani {
+    0% {
+        opacity: 1;
+        top: 29%;
+    }
+    15% {
+        opacity: 1;
+        top: 50%;
+    }
+    50% {
+        opacity: 0;
+        top: 50%;
+    }
+    100% {
+        opacity: 0;
+        top: 29%;
+    }
+}
+@-moz-keyframes scroll-ani {
+    0% {
+        opacity: 1;
+        top: 29%;
+    }
+    15% {
+        opacity: 1;
+        top: 50%;
+    }
+    50% {
+        opacity: 0;
+        top: 50%;
+    }
+    100% {
+        opacity: 0;
+        top: 29%;
+    }
+}
+@keyframes scroll-ani {
+    0% {
+        opacity: 1;
+        top: 29%;
+    }
+    15% {
+        opacity: 1;
+        top: 50%;
+    }
+    50% {
+        opacity: 0;
+        top: 50%;
+    }
+    100% {
+        opacity: 0;
+        top: 29%;
+    }
+}
+.mouse-scroll {
+    position: absolute;
+    left:48%;
+    display: inline-block;
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #FFF;
+    letter-spacing: 2px;
+    bottom:5%;
+    text-decoration: none;
+    overflow: hidden;
+}
+.mouse-scroll .mouse {
+    position: relative;
+    display: block;
+    width: 46px;
+    height: 73px;
+    margin: 0 auto 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid #FFF;
+    border-radius: 23px;
+}
+.mouse-scroll .mouse .mouse-movement {
+    position: absolute;
+    display: block;
+    top: 29%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
+    background: #FFF;
+    border-radius: 50%;
+    -webkit-animation: scroll-ani 4s linear infinite;
+    -moz-animation: scroll-ani 4s linear infinite;
+    animation: scroll-ani 4s linear infinite;
+}
+.mouse-scroll .mouse-message {
+    float: left;
+    margin: -200px 0 0 7px;
+    padding: 0;
+    -webkit-animation: scroll-ani 4s linear infinite;
+    -moz-animation: scroll-ani 4s linear infinite;
+    animation: scroll-ani 4s linear infinite;
+    color:#fff;
+}
+.mouse-scroll:hover .mouse-message {
+    margin-top: 0;
+}
+
+
+
+/*
+/******************************************************************************************************************************************************************************************************************************************************************************************/
+/* End Header */
+/* Start About */
+.about
+{
+    margin-top: 100px;
+}
+.about .video
+{
+    background: linear-gradient(rgba(34, 27, 25, 0.8), rgba(34, 27, 25, 0.8)), rgba(34, 27, 25, 0.8) url(../images/chairs-contemporary-design-967016.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 400px;
+    background-position: center;
+    position: relative;
+}
+.about .video a
+{
+    text-decoration: none;
+}
+.about .video .text a i
+{
+    position: absolute;
+    color: #fff;
+    font-size: 54px;
+    top: 37%;
+}
+.about .video .text p
+{
+    display: inline-block;
+    color: #e7a625;
+    position: absolute;
+    top: 52%;
+    font-size: 13px;
+    font-weight: bold;
+}
+.about .about-text h3
+{
+    border-left: 3px solid #e7a625;
+    color: #908c8c;
+    display: inline-block;
+    padding: 6px;
+    margin-bottom: 15px;
+}
+@media (max-width:767px)
+{
+    .about .about-text h3
+    {
+        margin-top: 20px;
+    }
+    
+}
+.about .about-text p
+{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.about .about-text .lead
+{
+    color: #777;
+    font-size: 18px;
+    font-weight: 500;
+}
+.about .about-text .more
+{
+    display: none;
+}
+.about button
+{
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+/* End About */
+/******************************************************************************************************************************************************************************************************************************************************************************************/
+/* Start Projects */
+.project
+{
+    margin-top: 100px;
+
+}
+.project h3
+{
+     border-left: 3px solid #e7a625;
+    color: #908c8c;
+    display: inline-block;
+    padding: 6px;
+    margin-bottom: 15px;
+}
+.project p
+{
+    color: #777;
+    font-size: 18px;
+    font-weight: 500; 
+}
+.project ul
+{
+    margin-top: 40px;
+}
+.project ul li
+{
+   display: inline-block;
+    border: 1px solid #e7a625;
+    margin-left: 10px;
+    background-color: transparent;
+    color: #000;
+    padding: 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.project ul .slicted
+{
+    background-color: #e7a625;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.project .gallary
+{
+    width: 100%;
+    overflow: hidden;
+}
+.project .item 
+{
+    width: 32%;
+    float: left;
+    position: relative;
+    margin-left: 1.333%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    transition: all 2s ease-in-out;
+    display: inline-block
+    
+}
+.project .item .over
+{
+    position: absolute;
+    top: 10px;
+    height: 100%;
+    left: 10px;
+    width: 100%;
+    background-color: rgba(247,96,14,0.7);
+    display: none;
+    overflow: hidden;
+    transform: scale(1.2);
+}
+.project .item .over h3
+{
+    border: none;
+    margin-top: 30px;
+}
+.project .item .over h3,
+.project .item .over p
+{
+    color: #fff;
+}
+@media (max-width:767px)
+{
+    .project .item .over h3
+    {
+        font-size: 15px;
+        margin-top: 40px
+    }
+    .project .item .over p
+    {
+        display: none;
+    }
+}
+@media (min-width:768px) and (max-width:991px)
+{
+    .project .item .over h3
+    {
+        font-size: 18px;
+        margin-top: 40px
+        
+    }
+    .project .item .over p
+    {
+        display: none;
+    }
+}
+.project .item .over a
+{
+    text-decoration: none;
+    background-color: transparent;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    position: absolute;
+    top: 68%;
+    left: 10%;
+}
+@media (max-width:767px)
+{
+    .project .item .over a
+    {
+        top: 60%;
+    }
+}
+.project .item .over i
+{
+    position: absolute;
+    top: 32%;
+    left: 32%;
+    font-size: 20px;
+    color: #4e4c45;
+    transition: all 2s ease-in-out;
+    cursor: zoom-in;
+}
+.project .item .over i:hover
+{
+    color: #fff;
+    
+}
+.project .item:hover .over
+{
+    display: inline-block;
+
+}
+.project .item .over button:hover{
+    background-color:#e7a625 
+}
+.project .item img
+{
+    width: 100%;
+    height: 300px;
+    transition: all 2s ease-in-out;
+    transition: transform 3s
+}
+.project .item:hover img
+{
+    transform: scale(1.2);
+}
+@media (max-width:767px)
+{
+    .project .item img
+    {
+        height: 200px;
+    }
+}
+/* End Projects */
+/******************************************************************************************************************************************************************************************************************************************************************************************/
+/* Start Services */
+.services
+{
+    margin-top: 100px;
+}
+.services .services-text h2
+{
+    border-left: 3px solid #e7a625;
+    color: #423d3d;
+    display: inline-block;
+    padding: 6px;
+}
+.services .services-text p
+{
+    color: #777;
+    font-size: 18px;
+    font-weight: 500; 
+}
+.services .services-work
+{
+    margin-top: 70px;
+    position: relative;
+}
+.services .services-work i
+{
+    margin-bottom: 15px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #e7a625;
+}
+.services .services-work .fa-file:before,
+.services .services-work .fa-suitcase:before,
+.services .services-work .fa-lightbulb-o:before
+
+{
+    position: absolute;
+    top: 23px;
+    left: 40px;
+    font-size: 25px;
+    color: #e8e7e7;
+}
+.services .our-services
+{
+    margin-top: 70px;
+    position: relative;
+}
+.services .our-services h2
+{
+    border-left: 3px solid #e7a625;
+    color: #423d3d;
+    display: inline-block;
+    padding: 6px;
+    margin-bottom: 30px;
+}
+.services .our-services p
+{
+    color: #777;
+    font-size: 15px;
+    font-weight: 500; 
+}
+.services .our-services .details 
+{
+    background-color: #f5f3f3;
+    margin-bottom: 15px;
+    padding: 15px
+}
+.services .our-services .details i
+{
+    font-size: 40px;
+    color: #e7a625;
+    margin-bottom: 20px;
+}
+.services .our-services .details h3
+{
+    font-size: 23px;
+    color: #5d5959;
+}
+.services .our-services .details p
+{
+    color: #949494;
+}
+/* End Services */
+/***************************************************************************************************************************************************************************************************************************************************************************************************/
+/* Start Blog */
+.blog
+{
+    margin-top: 100px;
+}
+.blog .blog-text h2
+{
+    border-left: 3px solid #e7a625;
+    color: #423d3d;
+    display: inline-block;
+    padding: 6px;
+}
+.blog .blog-text p
+{
+    color: #777;
+    font-size: 18px;
+    font-weight: 500; 
+}
+.blog .blog-card
+{
+    margin-top: 70px;
+}
+.blog .blog-card .card span
+{
+    color: #e7a625;
+}
+@media (max-width:575px)
+{
+    .blog .card
+    {
+        text-align: center !important;   
+    }
+}
+/* End Blog */
+/*************************************************************************************************************************************************************************************************************************************************************************************************
+***/
+/* Start Footer */
+.footer {
+    background-color: #0e0c0b;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #372d2b;
+    margin-top: 100px;
+}
+.footer-widget .widget-title {
+    color: #fff;
+    font-weight: 600;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    letter-spacing: 1.75px;
+}
+.footer-widget p {
+    color: #777;
+}
+.tiny-footer {
+    padding-top: 19px;
+    padding-bottom: 9px;
+    font-size: 12px;
+    background-color: #0e0c0b;
+    color: #858585;
+    text-transform: uppercase;
+}
+.copyright-content {
+    padding-top: 7px;
+}
+.footer-social ul {
+    float: right;
+}
+
+element.style {
+}
+.footer-social ul li {
+    float: left;
+    margin-left: 15px;
+}
+.copyright-content a {
+    color: #e7a625;
+    text-decoration: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.footer-social ul li a i {
+    color: #acacac;
+    font-size: 20px;
+}
+.footer-social ul li a i:hover{
+    color: #e7a625;
+    font-size: 20px;
+}
+/* End Footer */
